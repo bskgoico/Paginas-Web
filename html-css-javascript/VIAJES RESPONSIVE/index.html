@@ -11,6 +11,7 @@
     
     <header>
         <a href="#" class="brand">Viajes</a>
+        <div class="btn-menu"></div>
         <div class="navegacion">
             <div class="navegacion-items">
                 <a href="#">Inicio</a>
@@ -35,6 +36,16 @@
         </div>
 
     </section>
+
+    <script type="text/javascript">
+        const menuBtn = document.querySelector('.btn-menu');
+        const navegacion = document.querySelector('.navegacion');
+
+        menuBtn.addEventListener('click',() => {
+            menuBtn.classList.toggle('active');
+            navegacion.classList.toggle('active');
+        });
+    </script>
 
 </body>
 </html>
