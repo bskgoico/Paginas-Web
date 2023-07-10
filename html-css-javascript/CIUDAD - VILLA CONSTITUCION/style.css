@@ -51,6 +51,12 @@ nav ul li a {
     font-size: 160px;
     color: #fff;
     font-weight: 600;
+    transition: 0.5s;
+}
+
+.contenido h1:hover {
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
 }
 
 .contenido a {
@@ -64,3 +70,16 @@ nav ul li a {
     margin-top: 20px;
 }
 
+.fondo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .fondo {
+        width: auto;
+        height: 100%;
+    }
+}
